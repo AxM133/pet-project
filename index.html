@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение Погода</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="weather-widget">
+        <div class="city-selection">
+            <button id="show-input-button">Выберите город</button>
+            <div id="city-input-container" style="display: none;">
+                <input type="text" id="city-input" placeholder="Введите город">
+                <button id="city-button">Поиск</button>
+            </div>
+            <div id="selected-city">Город: Москва</div>
+        </div>
+        <div class="current-weather">
+            <div class="current-temperature">
+                <h1 id="temperature">+18°</h1>
+                <div id="weather-icon"><i class="fas fa-sun"></i></div>
+            </div>
+            <div id="time-temperature">
+                <!-- Прогноз на несколько часов вперед -->
+            </div>
+            <div id="last-updated">Последнее обновление: <span id="update-time"></span></div>
+        </div>
+        <div class="properties-weather">
+            <div id="details">
+                <p>Ветер: <span id="wind">2 км/ч</span></p>
+                <p>Влажность: <span id="humidity">72%</span></p>
+            </div>
+        </div>
+        <div class="weather-week">
+            <div class="forecast">
+                <!-- Прогноз на несколько дней вперед -->
+            </div>
+        </div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
